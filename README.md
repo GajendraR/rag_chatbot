@@ -3,7 +3,7 @@
 This project is a Flask-based web application that allows users to upload PDF documents, process and index the text using Pinecone, and then query the indexed content using Google Gemini's language model. The project also integrates Firebase for metadata storage and document management.
 
 ### Demo
-[Watch Demo](https://github.com/user-attachments/assets/5d1b1b45-f8fc-4f2d-b826-22bca2044b0d)
+[Watch Demo](https://github.com/user-attachments/assets/Recording.2024-09-23.162120.mp4)
 
 
 ## Features
