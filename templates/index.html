@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Chat System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>RAG Chat System</h1>
+        
+        <!-- Upload Form -->
+        <div class="form-container">
+            <h2>Upload Document</h2>
+            <form id="upload-form">
+                <label for="title">Chat Name:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="doc">Upload PDF:</label>
+                <input type="file" id="doc" name="doc" accept="application/pdf" required>
+                
+                <button type="submit">Upload</button>
+            </form>
+            <div id="upload-response" class="response"></div>
+        </div>
+
+        <!-- Query Form -->
+        <div class="form-container">
+            <h2>Ask a Question</h2>
+            <form id="query-form">
+                <label for="chat_name">Chat Name:</label>
+                <input type="text" id="chat_name" name="chat_name" required>
+                
+                <label for="question">Question:</label>
+                <input type="text" id="question" name="question" required>
+                
+                <button type="submit">Ask</button>
+            </form>
+            <div id="query-response" class="response"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
